@@ -1,4 +1,4 @@
-from bitgocho.Meta.Info import MetaInfo
+from bitgocho.meta.Info import MetaInfo
 
 
 def reannounce(fname, announce, announce_list=None, verbose=False):

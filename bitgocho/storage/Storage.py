@@ -14,7 +14,7 @@ MAXLOCKSIZE = 1000000000
 MAXLOCKRANGE = 3999999999  # only lock first 4 gig of file
 
 
-class Storage:
+class storage:
     def __init__(self, files, piece_length, doneflag, config, disabled_files=None):
         # can raise IOError and ValueError
         self.files = files  # [(fname, length)]

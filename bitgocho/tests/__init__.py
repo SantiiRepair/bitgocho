@@ -1,4 +1,4 @@
-from ..Types.tests import *
+from ..types.tests import *
 from .test_bencode import CodecTests
 from .test_networkaddress import (
     AddressFunctionTests,

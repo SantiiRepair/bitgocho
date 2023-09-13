@@ -10,7 +10,7 @@
 import sys
 import os
 import getopt
-from bitgocho.Meta.Info import MetaInfo
+from bitgocho.meta.Info import MetaInfo
 
 VERSION = "20130326"
 

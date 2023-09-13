@@ -3,8 +3,8 @@
 
 import os
 import hashlib
-from bitgocho.Meta.bencode import bencode
-from bitgocho.Meta.Info import check_info, MetaInfo
+from bitgocho.meta.bencode import bencode
+from bitgocho.meta.Info import check_info, MetaInfo
 
 
 def _errfunc(msg):

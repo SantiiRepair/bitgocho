@@ -7,8 +7,8 @@
 import sys
 import os
 import hashlib
-from bitgocho.Meta.Info import MetaInfo
-from bitgocho.Meta.bencode import bencode
+from bitgocho.meta.Info import MetaInfo
+from bitgocho.meta.bencode import bencode
 
 NAME, EXT = os.path.splitext(os.path.basename(sys.argv[0]))
 VERSION = "20130326"

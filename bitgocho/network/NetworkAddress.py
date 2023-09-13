@@ -17,7 +17,7 @@ ranges.
 import bisect
 import operator
 from functools import reduce
-from ..Types import IP, IPv4, IPv6
+from ..types import IP, IPv4, IPv6
 
 
 class AddressRange(object):  # pylint: disable=R0903

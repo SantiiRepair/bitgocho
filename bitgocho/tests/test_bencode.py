@@ -1,6 +1,6 @@
 import unittest
 
-from ..Meta.bencode import bencode, bdecode, Bencached
+from ..meta.bencode import bencode, bdecode, Bencached
 
 
 class CodecTests(unittest.TestCase):

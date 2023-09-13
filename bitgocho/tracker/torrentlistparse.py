@@ -1,6 +1,6 @@
 import string
 from binascii import unhexlify
-from ..Types import DictSet, Infohash
+from ..types import DictSet, Infohash
 
 HEX = set(string.hexdigits)
 

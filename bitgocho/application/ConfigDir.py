@@ -7,7 +7,7 @@ import os
 import time
 from binascii import hexlify, unhexlify
 from .inifile import ini_write, ini_read
-from bitgocho.Meta.bencode import bencode, bdecode
+from bitgocho.meta.bencode import bencode, bdecode
 from .parseargs import defaultargs
 
 DIRNAME = "." + bitgocho.product_name

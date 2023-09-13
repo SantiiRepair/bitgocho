@@ -64,7 +64,7 @@ class FileSelector:
                     a list of download priorities for each file.
                     Priority may be -1, 0, 1, 2.  -1 = download disabled,
                     0 = highest, 1 = normal, 2 = lowest.
-    Also see Storage.pickle and StorageWrapper.pickle for additional keys.
+    Also see storage.pickle and StorageWrapper.pickle for additional keys.
     """
 
     def unpickle(self, d):

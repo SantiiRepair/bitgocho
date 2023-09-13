@@ -1,7 +1,7 @@
 import hashlib
 import random
 import bisect
-from ..Types import Bitfield, OrderedSet
+from ..types import Bitfield, OrderedSet
 from bitgocho.clock import clock
 
 DEBUG = False

@@ -4,13 +4,13 @@ import random
 from io import StringIO
 from traceback import print_exc
 from .download_bt1 import BT1Download
-from bitgocho.Network.RawServer import RawServer
-from bitgocho.Network.SocketHandler import UPnP_ERROR
+from bitgocho.network.RawServer import RawServer
+from bitgocho.network.SocketHandler import UPnP_ERROR
 from .RateLimiter import RateLimiter
-from bitgocho.Network.ServerPortHandler import MultiHandler
+from bitgocho.network.ServerPortHandler import MultiHandler
 from bitgocho.application.NumberFormats import formatIntClock
 from bitgocho.application.parsedir import parsedir
-from bitgocho.Network.natpunch import UPnP_test
+from bitgocho.network.natpunch import UPnP_test
 from bitgocho.clock import clock
 from bitgocho.application.PeerID import createPeerID
 

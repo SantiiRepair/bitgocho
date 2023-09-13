@@ -41,7 +41,7 @@
 195.22.0.0/19 # AS5533         VIA NET.WORKS Portugal -  Tecnologias de Informacao
 195.22.16.0/21 # AS5533         VIA NET.WORKS Portugal -  Tecnologias de Informacao
 195.138.0.0/19 # AS6773         SIBS - Sociedade Interbancaria de Servicos
-212.54.128.0/19 # AS8824         ITNET-Network
+212.54.128.0/19 # AS8824         ITNET-network
 194.145.59.0/24 # AS8826         Siemens Autonomous System
 194.145.60.0/24 # AS8826         Siemens Autonomous System
 194.145.61.0/24 # AS8826         Siemens Autonomous System

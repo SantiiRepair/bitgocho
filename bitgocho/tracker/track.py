@@ -18,13 +18,13 @@ from .torrentlistparse import HashSet, parsetorrentlist
 from bitgocho.application.NumberFormats import formatSize
 from bitgocho.application.parseargs import parseargs, formatDefinitions
 from bitgocho.application.parsedir import parsedir
-from bitgocho.Client.Announce import HTTPAnnouncer, Response
-from bitgocho.Meta.bencode import bencode, Bencached, BencodedFile
-from bitgocho.Network.BTcrypto import CRYPTO_OK
-from bitgocho.Network.NatCheck import NatCheck, CHECK_PEER_ID_ENCRYPTED
-from bitgocho.Network.NetworkAddress import is_valid_ip, to_ipv4, AddrList
-from bitgocho.Network.RawServer import RawServer, autodetect_socket_style
-from ..Types import TypedDict, BytesIndexed, Infohash, PeerID, Port, UnsignedInt, IPv4
+from bitgocho.client.Announce import HTTPAnnouncer, Response
+from bitgocho.meta.bencode import bencode, Bencached, BencodedFile
+from bitgocho.network.BTcrypto import CRYPTO_OK
+from bitgocho.network.NatCheck import NatCheck, CHECK_PEER_ID_ENCRYPTED
+from bitgocho.network.NetworkAddress import is_valid_ip, to_ipv4, AddrList
+from bitgocho.network.RawServer import RawServer, autodetect_socket_style
+from ..types import TypedDict, BytesIndexed, Infohash, PeerID, Port, UnsignedInt, IPv4
 from bitgocho.clock import clock
 
 from bitgocho import version
@@ -342,7 +342,7 @@ def compact_peer_info(ip, port):
         return b""  # not a valid IP, must be a domain name
 
 
-class Tracker(object):
+class tracker(object):
     def __init__(self, config, rawserver):
         self.config = config
         self.response_size = config["response_size"]  # int (# peers)
@@ -1468,7 +1468,7 @@ def track(args):
         config["socket_timeout"],
         ipv6_enable=config["ipv6_enabled"],
     )
-    t = Tracker(config, r)
+    t = tracker(config, r)
     r.bind(
         config["port"],
         config["bind"],

@@ -119,7 +119,7 @@ TIPS 'N TRICKS
   it gets old and the load tails off, remove the .torrent file from
   some or most of the trackers' allowed_dirs.  The clients will
   automatically skip off the trackers that have removed it, and attach
-  to the ones that still have it.  Tracker-to-tracker bandwidth for
+  to the ones that still have it.  tracker-to-tracker bandwidth for
   these torrents will automatically discontinue from trackers that no
   longer support it.  As a result, you can save bandwidth, and save T2T
   for when you really need it.

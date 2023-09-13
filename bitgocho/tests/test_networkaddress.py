@@ -1,8 +1,8 @@
 import unittest
 import random
 
-from ..Types import IP, IPv4, IPv6
-from bitgocho.Network.NetworkAddress import (
+from ..types import IP, IPv4, IPv6
+from bitgocho.network.NetworkAddress import (
     AddressRange,
     Subnet,
     AddrList,

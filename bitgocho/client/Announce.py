@@ -8,9 +8,9 @@ import random
 import urllib
 import base64
 import threading
-from bitgocho.Meta.bencode import bdecode
-from ..Types import TypedDict, TypedList, QueryDict, Port, Infohash, PeerID, IPv4, IPv6
-from bitgocho.Network.Stream import SharedStream
+from bitgocho.meta.bencode import bdecode
+from ..types import TypedDict, TypedList, QueryDict, Port, Infohash, PeerID, IPv4, IPv6
+from bitgocho.network.Stream import SharedStream
 
 
 class _Peer(TypedDict):
@@ -115,7 +115,7 @@ class Announcer(object):
         """Return the Announcer associated with the tracker URL, creating a
         new one, if needed.
 
-        Client port is made available to Announcer objects, but is assumed
+        client port is made available to Announcer objects, but is assumed
         not to vary within a program, so calling with the same URL and two
         different ports will return the same object."""
 

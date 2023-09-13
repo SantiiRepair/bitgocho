@@ -5,8 +5,8 @@
 
 import sys
 import os
-from bitgocho.Client.launchmanycore import LaunchMany
-from bitgocho.Client.download_bt1 import defaults, get_usage
+from bitgocho.client.launchmanycore import LaunchMany
+from bitgocho.client.download_bt1 import defaults, get_usage
 from bitgocho.application.parseargs import parseargs
 from bitgocho import version, report_url
 from bitgocho.application.ConfigDir import ConfigDir

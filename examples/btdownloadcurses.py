@@ -11,17 +11,17 @@ import random
 import socket
 import hashlib
 import threading
-from bitgocho.Client.download_bt1 import (
+from bitgocho.client.download_bt1 import (
     BT1Download,
     defaults,
     parse_params,
     get_usage,
     get_metainfo,
 )
-from bitgocho.Network.RawServer import RawServer
-from bitgocho.Network.SocketHandler import UPnP_ERROR
-from bitgocho.Meta.bencode import bencode
-from bitgocho.Network.natpunch import UPnP_test
+from bitgocho.network.RawServer import RawServer
+from bitgocho.network.SocketHandler import UPnP_ERROR
+from bitgocho.meta.bencode import bencode
+from bitgocho.network.natpunch import UPnP_test
 from bitgocho.clock import clock
 from bitgocho import version
 from bitgocho.application.ConfigDir import ConfigDir

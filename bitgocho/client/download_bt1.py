@@ -1,22 +1,22 @@
 import os
 import warnings
 import threading
-from bitgocho.Meta.Info import MetaInfo, check_info
+from bitgocho.meta.Info import MetaInfo, check_info
 from urllib.parse import urlparse
 from .Announce import urls_to_announcers
 from .Choker import Choker
-from bitgocho.Storage.Storage import Storage
-from bitgocho.Storage.StorageWrapper import StorageWrapper
-from bitgocho.Storage.FileSelector import FileSelector
+from bitgocho.storage.storage import storage
+from bitgocho.storage.StorageWrapper import StorageWrapper
+from bitgocho.storage.FileSelector import FileSelector
 from .Uploader import Upload
 from .Downloader import Downloader
 from .HTTPDownloader import HTTPDownloader
 from .Connecter import Connecter
 from .RateLimiter import RateLimiter
-from bitgocho.Network.Encrypter import Encoder
-from ..Types import IPv4
-from bitgocho.Network.RawServer import autodetect_socket_style
-from bitgocho.Network.Stream import geturl
+from bitgocho.network.Encrypter import Encoder
+from ..types import IPv4
+from bitgocho.network.RawServer import autodetect_socket_style
+from bitgocho.network.Stream import geturl
 from .Rerequester import Rerequester
 from .DownloaderFeedback import DownloaderFeedback
 from .RateMeasure import RateMeasure
@@ -24,9 +24,9 @@ from .CurrentRateMeasure import Measure
 from .PiecePicker import PiecePicker
 from .Statistics import Statistics
 from bitgocho.application.ConfigDir import ConfigDir
-from bitgocho.Meta.bencode import bdecode
+from bitgocho.meta.bencode import bdecode
 from bitgocho.application.parseargs import parseargs, formatDefinitions
-from bitgocho.Network.BTcrypto import CRYPTO_OK
+from bitgocho.network.BTcrypto import CRYPTO_OK
 
 defaults = [
     ("max_uploads", 7, "the maximum number of uploads to allow at once."),
@@ -509,7 +509,7 @@ class BT1Download:
         piece_length = self.metainfo["info"]["piece length"]
         try:
             try:
-                self.storage = Storage(
+                self.storage = storage(
                     self.files, piece_length, self.doneflag, self.config, disabled_files
                 )
             except IOError as e:

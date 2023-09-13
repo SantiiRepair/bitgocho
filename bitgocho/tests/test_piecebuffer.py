@@ -1,6 +1,6 @@
 import unittest
 
-from bitgocho.Storage.PieceBuffer import PieceBuffer
+from bitgocho.storage.PieceBuffer import PieceBuffer
 import array
 
 

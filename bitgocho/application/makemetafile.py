@@ -2,8 +2,8 @@
 import os
 import threading
 from traceback import print_exc
-from bitgocho.Meta.BTTree import BTTree
-from bitgocho.Meta.Info import MetaInfo
+from bitgocho.meta.BTTree import BTTree
+from bitgocho.meta.Info import MetaInfo
 
 defaults = [
     ("announce-list", "", "a list of announce URLs - explained below"),

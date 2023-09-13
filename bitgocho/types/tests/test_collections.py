@@ -2,8 +2,8 @@ import unittest
 import random
 
 from ..collections import TypedList, TypedDict, DictSet, OrderedSet, SplitList
-from ...Meta.bencode import bencode, bdecode
-from ...Meta.Info import MetaInfo
+from ...meta.bencode import bencode, bdecode
+from ...meta.Info import MetaInfo
 
 
 class APITest(object):

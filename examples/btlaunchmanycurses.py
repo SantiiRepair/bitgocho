@@ -8,8 +8,8 @@ import os
 import time
 import signal
 import threading
-from bitgocho.Client.launchmanycore import LaunchMany
-from bitgocho.Client.download_bt1 import defaults, get_usage
+from bitgocho.client.launchmanycore import LaunchMany
+from bitgocho.client.download_bt1 import defaults, get_usage
 from bitgocho.application.NumberFormats import formatSize, formatIntClock
 from bitgocho.application.parseargs import parseargs
 from bitgocho import version, report_url

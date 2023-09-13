@@ -43,7 +43,7 @@ A directory of files can be downloaded with any of the following commands:
 
 Attempting to download an already downloaded file will seed it.
 
-## Tracker
+## tracker
 First, you need a tracker. If you're on a dynamic IP or otherwise 
 unreliable connection, you should find someone else's tracker and 
 use that. Otherwise, follow the rest of this step.

@@ -1,6 +1,6 @@
 import unittest
 
-from bitgocho.Network.selectpoll import remove, insert
+from bitgocho.network.selectpoll import remove, insert
 
 
 class PollListTests(unittest.TestCase):

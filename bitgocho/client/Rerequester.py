@@ -1,6 +1,6 @@
 import threading
 import random
-from bitgocho.Meta.Info import check_type
+from bitgocho.meta.Info import check_type
 from io import StringIO
 from traceback import print_exc
 

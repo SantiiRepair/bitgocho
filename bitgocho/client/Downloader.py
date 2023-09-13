@@ -1,6 +1,6 @@
 import random
 from .CurrentRateMeasure import Measure
-from ..Types import Bitfield
+from ..types import Bitfield
 from bitgocho.clock import clock
 
 EXPIRE_TIME = 60 * 60

@@ -4,7 +4,7 @@
 # see LICENSE.txt for license information
 
 import sys
-from bitgocho.Tracker.track import track
+from bitgocho.tracker.track import track
 
 PROFILE = 0
 
