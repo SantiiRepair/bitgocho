@@ -1,5 +1,4 @@
-##BitGocho
-==========
+## BitGocho
 
 BitGocho is a fork of the original Python BitTorrent distribution, made by
 John Hoffman to add some experimental features, most (if not all) of which are
@@ -15,7 +14,6 @@ work at least as well as they did in version 0.3.18. Since 0.4.0, the library
 components have been substantially reorganized, so expect dependent
 applications to break on upgrade.
 
-Notice of unmaintained status
 =============================
 
 I appreciate that people have made an effort to use and report bugs in this
@@ -23,36 +21,13 @@ package, which I believe is the most approachable implementation of many aspects
 of the protocol and file format. However, the BitTorrent ecosystem has moved on,
 and I don't have time to keep up with it.
 
-At the time of this writing, in November 2018, it's been over two years since I
-was able to do more than briefly respond to an issue or review a small PR. This
-notice is less a decision and more an acknowledgment that I cannot devote any
-effort to maintaining this repository.
-
-There are various known [issues](https://github.com/effigies/bitgocho/issues)
-that are unresolved and will remain so unless somebody takes up maintenance.
-
 Thanks to all who contributed time and effort on this.
 
-Branches/Tags
-=============
+## Branches/Tags
 
 Further development will be done in Python 3, although patches to the other
 branches may be accepted.
 
-* [v0.3.18](https://github.com/effigies/bitgocho/tree/v0.3.18): Original
-    import
-* [legacy](https://github.com/effigies/bitgocho/tree/legacy): Library
-    structure unchanged, some fixes/cleanups made
-* [python2.6](https://github.com/effigies/bitgocho/tree/python2.6): Python
-    2.6 compatibility maintained (legacy)
-* [v0.4.0](https://github.com/effigies/bitgocho/tree/v0.4.0): Major
-    restructuring, breaking depending applications
-* [python2.7](https://github.com/effigies/bitgocho/tree/python2.7): Python
-    2.7 compatibility maintained (library structure updated)
-* [master](https://github.com/effigies/bitgocho/tree/master): Python 3
-
-Using bitgocho Applications
-=============================
 
 ## Download or seed a file
 
