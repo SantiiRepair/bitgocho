@@ -23,9 +23,9 @@ from .RateMeasure import RateMeasure
 from .CurrentRateMeasure import Measure
 from .PiecePicker import PiecePicker
 from .Statistics import Statistics
-from bitgocho.Application.ConfigDir import ConfigDir
+from bitgocho.application.ConfigDir import ConfigDir
 from bitgocho.Meta.bencode import bdecode
-from bitgocho.Application.parseargs import parseargs, formatDefinitions
+from bitgocho.application.parseargs import parseargs, formatDefinitions
 from bitgocho.Network.BTcrypto import CRYPTO_OK
 
 defaults = [

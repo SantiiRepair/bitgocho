@@ -1,6 +1,6 @@
 import unittest
 
-from bitgocho.Application.parseargs import parseargs
+from bitgocho.application.parseargs import parseargs
 
 
 class ParseArgsTest(unittest.TestCase):

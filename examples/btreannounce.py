@@ -7,8 +7,8 @@
 import sys
 import os
 import getopt
-from bitgocho.Application.makemetafile import announcelist_details
-from bitgocho.Application.reannounce import reannounce
+from bitgocho.application.makemetafile import announcelist_details
+from bitgocho.application.reannounce import reannounce
 
 announce_details = """
   Where:

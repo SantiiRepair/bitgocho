@@ -8,11 +8,11 @@ from bitgocho.Network.RawServer import RawServer
 from bitgocho.Network.SocketHandler import UPnP_ERROR
 from .RateLimiter import RateLimiter
 from bitgocho.Network.ServerPortHandler import MultiHandler
-from bitgocho.Application.NumberFormats import formatIntClock
-from bitgocho.Application.parsedir import parsedir
+from bitgocho.application.NumberFormats import formatIntClock
+from bitgocho.application.parsedir import parsedir
 from bitgocho.Network.natpunch import UPnP_test
 from bitgocho.clock import clock
-from bitgocho.Application.PeerID import createPeerID
+from bitgocho.application.PeerID import createPeerID
 
 
 class SingleDownload:

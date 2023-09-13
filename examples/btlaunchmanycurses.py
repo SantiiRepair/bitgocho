@@ -10,10 +10,10 @@ import signal
 import threading
 from bitgocho.Client.launchmanycore import LaunchMany
 from bitgocho.Client.download_bt1 import defaults, get_usage
-from bitgocho.Application.NumberFormats import formatSize, formatIntClock
-from bitgocho.Application.parseargs import parseargs
+from bitgocho.application.NumberFormats import formatSize, formatIntClock
+from bitgocho.application.parseargs import parseargs
 from bitgocho import version, report_url
-from bitgocho.Application.ConfigDir import ConfigDir
+from bitgocho.application.ConfigDir import ConfigDir
 
 try:
     import curses

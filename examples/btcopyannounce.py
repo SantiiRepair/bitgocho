@@ -9,7 +9,7 @@ import sys
 import os
 import getopt
 from bitgocho.Meta.Info import MetaInfo
-from bitgocho.Application.reannounce import reannounce
+from bitgocho.application.reannounce import reannounce
 
 
 def main(argv):

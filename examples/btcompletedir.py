@@ -6,12 +6,12 @@
 
 import sys
 import os
-from bitgocho.Application.makemetafile import (
+from bitgocho.application.makemetafile import (
     defaults,
     completedir,
     announcelist_details,
 )
-from bitgocho.Application.parseargs import parseargs, formatDefinitions
+from bitgocho.application.parseargs import parseargs, formatDefinitions
 
 
 def main(cmd, *argv):
