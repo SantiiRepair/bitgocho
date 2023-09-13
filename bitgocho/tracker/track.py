@@ -15,7 +15,7 @@ from .Filter import Filter
 from .HTTPHandler import HTTPHandler, months
 from .T2T import T2TList
 from .torrentlistparse import HashSet, parsetorrentlist
-from bitgocho.application.NumberFormats import formatSize
+from bitgocho.application.number_formats import formatSize
 from bitgocho.application.parseargs import parseargs, formatDefinitions
 from bitgocho.application.parsedir import parsedir
 from bitgocho.client.Announce import HTTPAnnouncer, Response
@@ -28,7 +28,7 @@ from ..types import TypedDict, BytesIndexed, Infohash, PeerID, Port, UnsignedInt
 from bitgocho.clock import clock
 
 from bitgocho import version
-from bitgocho.application.PeerID import createPeerID
+from bitgocho.application.peer_id import createPeerID
 
 defaults = [
     ("port", 80, "Port to listen on."),

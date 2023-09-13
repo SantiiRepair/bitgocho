@@ -24,9 +24,9 @@ from bitgocho.meta.bencode import bencode
 from bitgocho.network.natpunch import UPnP_test
 from bitgocho.clock import clock
 from bitgocho import version
-from bitgocho.application.ConfigDir import ConfigDir
-from bitgocho.application.NumberFormats import formatIntClock, formatSize
-from bitgocho.application.PeerID import createPeerID
+from bitgocho.application.config_dir import ConfigDir
+from bitgocho.application.number_formats import formatIntClock, formatSize
+from bitgocho.application.peer_id import createPeerID
 
 try:
     import curses

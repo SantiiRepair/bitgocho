@@ -13,7 +13,7 @@ bitgocho/
             - John Hoffman and Christopher J. Markiewicz
         makemetafile.py
             - Bram Cohen, John Hoffman, Christopher J. Markiewicz
-        NumberFormats.py
+        number_formats.py
             - Christopher J. Markiewicz
         parseargs.py
             - Bill Bumgarner, Bram Cohen and Christopher J. Markiewicz

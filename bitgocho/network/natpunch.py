@@ -2,7 +2,7 @@ import socket
 from traceback import print_exc
 from .NetworkAddress import AddrList
 from bitgocho.clock import clock
-from bitgocho.application.PeerID import createPeerID
+from bitgocho.application.peer_id import createPeerID
 
 DEBUG = False
 

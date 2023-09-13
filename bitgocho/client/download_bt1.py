@@ -23,7 +23,7 @@ from .RateMeasure import RateMeasure
 from .CurrentRateMeasure import Measure
 from .PiecePicker import PiecePicker
 from .Statistics import Statistics
-from bitgocho.application.ConfigDir import ConfigDir
+from bitgocho.application.config_dir import ConfigDir
 from bitgocho.meta.bencode import bdecode
 from bitgocho.application.parseargs import parseargs, formatDefinitions
 from bitgocho.network.BTcrypto import CRYPTO_OK
