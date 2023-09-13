@@ -1,0 +1,126 @@
+The following list is based on comment lines in individual files as of 10 Feb
+2013, to be updated here as further contributions are made.
+
+bitgocho/
+    bitfield.py
+        - Bram Cohen, Uoti Urpala, John Hoffman and Christopher J. Markiewicz
+    clock.py
+        - John Hoffman
+    Application/
+        ConfigDir.py
+            - John Hoffman and Christopher J. Markiewicz
+        inifile.py
+            - John Hoffman and Christopher J. Markiewicz
+        makemetafile.py
+            - Bram Cohen, John Hoffman, Christopher J. Markiewicz
+        NumberFormats.py
+            - Christopher J. Markiewicz
+        parseargs.py
+            - Bill Bumgarner, Bram Cohen and Christopher J. Markiewicz
+        parsedir.py
+            - John Hoffman, Uoti Urpala and Christopher J. Markiewicz
+        PeerID.py
+            - Christopher J. Markiewicz
+                - based on code by John Hoffman
+        reannounce.py
+            - Christopher J. Markiewicz
+                - based on code by Henry 'Pi' James, Bram Cohen,
+                    and John Hoffman
+    Client
+        Choker.py
+            - Bram Cohen
+        Connecter.py
+            - Bram Cohen
+        CurrentRateMeasure.py
+            - Bram Cohen
+        download_bt1.py
+            - Bram Cohen
+        DownloaderFeedback.py
+            - Bram Cohen
+        Downloader.py
+            - Bram Cohen
+        HTTPDownloader.py
+            - John Hoffman
+        launchmanycore.py
+            - John Hoffman
+        PiecePicker.py
+            - Bram Cohen
+        RateLimiter.py
+            - Bram Cohen
+        RateMeasure.py
+            - Bram Cohen
+        Rerequester.py
+            - Bram Cohen and John Hoffman
+        Statistics.py
+            - Edward Keyes
+        Uploader.py
+            - Bram Cohen
+    Meta
+        bencode.py
+            - Petru Paler, Uoti Urpala, Ross Cohen, John Hoffman, and
+                Christopher J. Markiewicz
+        BTTree.py
+            - Christopher J. Markiewicz
+                - based on code by Bram Cohen and John Hoffman
+        Info.py
+            - Christopher J. Markiewicz and Bram Cohen
+                - based on code by John Hoffman
+    Network
+        BTcrypto.py
+            - John Hoffman
+                - based on code by Uoti Urpala
+        Encrypter.py
+            - Bram Cohen
+        NatCheck.py
+            - Bram Cohen
+        natpunch.py
+            - John Hoffman
+                - based on code by Yejun Yang and Myers Carpenter
+        NetworkAddress.py
+            - Christopher J. Markiewicz
+                - based on code by John Hoffman
+        RawServer.py
+            - Bram Cohen
+        selectpoll.py
+            - Bram Cohen
+        ServerPortHandler.py
+            - John Hoffman
+        SocketHandler.py
+            - Bram Cohen
+        zurllib.py
+            - John Hoffman
+    Storage
+        FileSelector.py
+            - John Hoffman
+        PieceBuffer.py
+            - John Hoffman
+        Storage.py
+            - Bram Cohen
+        StorageWrapper.py
+            - Bram Cohen
+    Tracker
+        Filter.py
+            - unknown authorship
+        HTTPHandler.py
+            - Bram Cohen
+        T2T.py
+            - John Hoffman
+        torrentlistparse.py
+            - John Hoffman and Christopher J. Markiewicz
+        track.py
+            - Bram Cohen
+
+Deleted Files:
+bitgocho/BT1/btformats.py
+    - Bram Cohen
+    - Incorporated into bitgocho/Meta/Info.py
+bitgocho/BT1/fakeopen.py
+    - Bram Cohen
+bitgocho/BT1/StreamCheck.py
+    - Bram Cohen
+bitgocho/ConfigReader.py
+    - John Hoffman
+bitgocho/ConnChoice.py
+    - John Hoffman
+bitgocho/CreateIcons.py
+    - John Hoffman
