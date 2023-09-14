@@ -7,13 +7,6 @@ in 2006, and thus many newer features are missing, but **BitGocho** is also an
 accessible Python library, and has several simple tools for editing torrent
 files.
 
-After several years of intermittent modifications, cleanups, modernization, and
-porting to Python 3.4, I have begun assigning version numbers. I have done my
-best to ensure that tagged versions and python-labelled branches (see below)
-work at least as well as they did in version 0.3.18. Since 0.4.0, the library
-components have been substantially reorganized, so expect dependent
-applications to break on upgrade.
-
 I appreciate that people have made an effort to use and report bugs in this
 package, which I believe is the most approachable implementation of many aspects
 of the protocol and file format. However, the BitTorrent ecosystem has moved on,
