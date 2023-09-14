@@ -1,32 +1,32 @@
 import os
 import warnings
 import threading
-from bitgocho.meta.Info import MetaInfo, check_info
+from bitgocho.meta.info import MetaInfo, check_info
 from urllib.parse import urlparse
-from .Announce import urls_to_announcers
-from .Choker import Choker
+from .announce import urls_to_announcers
+from .choker import Choker
 from bitgocho.storage.storage import storage
-from bitgocho.storage.StorageWrapper import StorageWrapper
-from bitgocho.storage.FileSelector import FileSelector
-from .Uploader import Upload
-from .Downloader import Downloader
-from .HTTPDownloader import HTTPDownloader
-from .Connecter import Connecter
-from .RateLimiter import RateLimiter
-from bitgocho.network.Encrypter import Encoder
+from bitgocho.storage.storage_wrapper import StorageWrapper
+from bitgocho.storage.file_selector import FileSelector
+from .uploader import Upload
+from .downloader import Downloader
+from .http_downloader import HTTPDownloader
+from .connecter import Connecter
+from .rate_limiter import RateLimiter
+from bitgocho.network.encrypter import Encoder
 from ..types import IPv4
-from bitgocho.network.RawServer import autodetect_socket_style
-from bitgocho.network.Stream import geturl
-from .Rerequester import Rerequester
-from .DownloaderFeedback import DownloaderFeedback
-from .RateMeasure import RateMeasure
-from .CurrentRateMeasure import Measure
-from .PiecePicker import PiecePicker
-from .Statistics import Statistics
+from bitgocho.network.raw_server import autodetect_socket_style
+from bitgocho.network.stream import geturl
+from .rerequester import Rerequester
+from .downloader_feedback import DownloaderFeedback
+from .rate_measure import RateMeasure
+from .current_rate_measure import Measure
+from .piece_picker import PiecePicker
+from .statistics import Statistics
 from bitgocho.application.config_dir import ConfigDir
 from bitgocho.meta.bencode import bdecode
 from bitgocho.application.parseargs import parseargs, formatDefinitions
-from bitgocho.network.BTcrypto import CRYPTO_OK
+from bitgocho.network.btcrypto import CRYPTO_OK
 
 defaults = [
     ("max_uploads", 7, "the maximum number of uploads to allow at once."),

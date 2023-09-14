@@ -5,7 +5,7 @@ bitgocho makemetafile.py behaviors.
 """
 
 import os
-from .Info import Info, MetaInfo
+from .info import Info, MetaInfo
 
 
 class BTTree(object):

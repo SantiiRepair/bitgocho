@@ -2,7 +2,7 @@ import threading
 import random
 import http.client
 import urllib
-from .CurrentRateMeasure import Measure
+from .current_rate_measure import Measure
 from ..types import TrueBitfield
 from bitgocho import product_name, version_short
 

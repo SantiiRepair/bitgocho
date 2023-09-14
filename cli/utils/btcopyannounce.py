@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 "Copy announce URLs from one torrent to others"
 
-# btreannounce.py written by Henry 'Pi' James and Bram Cohen
-# multitracker extensions by John Hoffman
-# see LICENSE.txt for license information
-
 import sys
 import os
 import getopt
-from bitgocho.meta.Info import MetaInfo
+from bitgocho.meta.info import MetaInfo
 from bitgocho.application.reannounce import reannounce
 
 

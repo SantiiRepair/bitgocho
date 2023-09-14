@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# Written by Bram Cohen
-# multitracker extensions by John Hoffman
-# see LICENSE.txt for license information
-
 import sys
 import os
 from bitgocho.application.makemetafile import (

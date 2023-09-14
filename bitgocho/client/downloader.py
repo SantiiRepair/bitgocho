@@ -1,5 +1,5 @@
 import random
-from .CurrentRateMeasure import Measure
+from .current_rate_measure import Measure
 from ..types import Bitfield
 from bitgocho.clock import clock
 

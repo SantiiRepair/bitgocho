@@ -1,4 +1,4 @@
-from .CurrentRateMeasure import Measure
+from .current_rate_measure import Measure
 
 
 class Upload:

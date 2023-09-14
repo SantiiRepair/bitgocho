@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 "Make a .torrent file for every file or directory in each given directory."
 
-# Written by Bram Cohen
-# see LICENSE.txt for license information
-
 import sys
 import os
 from bitgocho.application.makemetafile import (

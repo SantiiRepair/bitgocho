@@ -10,7 +10,7 @@ import base64
 import threading
 from bitgocho.meta.bencode import bdecode
 from ..types import TypedDict, TypedList, QueryDict, Port, Infohash, PeerID, IPv4, IPv6
-from bitgocho.network.Stream import SharedStream
+from bitgocho.network.stream import SharedStream
 
 
 class _Peer(TypedDict):

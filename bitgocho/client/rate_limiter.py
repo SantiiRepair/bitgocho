@@ -1,6 +1,6 @@
 import math
 from bitgocho.clock import clock
-from .CurrentRateMeasure import Measure
+from .current_rate_measure import Measure
 
 DEBUG = False
 

@@ -1,7 +1,7 @@
 """Generate metafile data for use in BitTorrent applications
 
 These data structures are generalizations of the original BitTorrent and
-bitgocho makemetafile.py behaviors.
+BitGocho make_metafile.py behaviors.
 """
 
 import os
