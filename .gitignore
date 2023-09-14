@@ -1,4 +1,9 @@
 *.pyc
 .*.swp
+*.egg-info/
+
 .gitpod.yml
 .codesandbox/
+
+dist
+build

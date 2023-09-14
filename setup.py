@@ -10,4 +10,5 @@ setup(
     description="🍄 A pure Python implementation of the BitTorrent client.",
     license="BSL",
     packages=find_packages(),
+    python_requires=">=3.10",
 )
