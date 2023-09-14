@@ -10,20 +10,19 @@ from io import StringIO
 from traceback import print_exc
 from binascii import hexlify
 from collections import defaultdict
-
-from .Filter import Filter
-from .HTTPHandler import HTTPHandler, months
-from .T2T import T2TList
-from .torrentlistparse import HashSet, parsetorrentlist
+from .filter import Filter
+from .http_handler import HTTPHandler, months
+from .t2t import T2TList
+from .torrent_list_parse import HashSet, parsetorrentlist
 from bitgocho.application.number_formats import formatSize
 from bitgocho.application.parseargs import parseargs, formatDefinitions
 from bitgocho.application.parsedir import parsedir
-from bitgocho.client.Announce import HTTPAnnouncer, Response
+from bitgocho.client.announce import HTTPAnnouncer, Response
 from bitgocho.meta.bencode import bencode, Bencached, BencodedFile
-from bitgocho.network.BTcrypto import CRYPTO_OK
-from bitgocho.network.NatCheck import NatCheck, CHECK_PEER_ID_ENCRYPTED
-from bitgocho.network.NetworkAddress import is_valid_ip, to_ipv4, AddrList
-from bitgocho.network.RawServer import RawServer, autodetect_socket_style
+from bitgocho.network.btcrypto import CRYPTO_OK
+from bitgocho.network.nat_check import NatCheck, CHECK_PEER_ID_ENCRYPTED
+from bitgocho.network.network_address import is_valid_ip, to_ipv4, AddrList
+from bitgocho.network.raw_server import RawServer, autodetect_socket_style
 from ..types import TypedDict, BytesIndexed, Infohash, PeerID, Port, UnsignedInt, IPv4
 from bitgocho.clock import clock
 

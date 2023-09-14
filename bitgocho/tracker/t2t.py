@@ -1,8 +1,8 @@
 import random
 import threading
 import urllib
-from bitgocho.client.Announce import Announcer
-from bitgocho.client.Rerequester import Rerequester
+from bitgocho.client.announce import Announcer
+from bitgocho.client.rerequester import Rerequester
 
 DEBUG = True
 
