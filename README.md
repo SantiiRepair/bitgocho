@@ -1,9 +1,9 @@
-## BitGocho
+## 🍄 BitGocho
 
-BitGocho is a fork of the original Python BitTorrent distribution, made by
+**BitGocho** is a fork of the original Python BitTorrent distribution, made by
 John Hoffman to add some experimental features, most (if not all) of which are
 now standard in other clients and trackers. The last official release was made
-in 2006, and thus many newer features are missing, but bitgocho is also an
+in 2006, and thus many newer features are missing, but **BitGocho** is also an
 accessible Python library, and has several simple tools for editing torrent
 files.
 
@@ -14,20 +14,12 @@ work at least as well as they did in version 0.3.18. Since 0.4.0, the library
 components have been substantially reorganized, so expect dependent
 applications to break on upgrade.
 
-=============================
-
 I appreciate that people have made an effort to use and report bugs in this
 package, which I believe is the most approachable implementation of many aspects
 of the protocol and file format. However, the BitTorrent ecosystem has moved on,
 and I don't have time to keep up with it.
 
 Thanks to all who contributed time and effort on this.
-
-## Branches/Tags
-
-Further development will be done in Python 3, although patches to the other
-branches may be accepted.
-
 
 ## Download or seed a file
 
@@ -43,7 +35,7 @@ A directory of files can be downloaded with any of the following commands:
 
 Attempting to download an already downloaded file will seed it.
 
-## tracker
+## Tracker
 First, you need a tracker. If you're on a dynamic IP or otherwise 
 unreliable connection, you should find someone else's tracker and 
 use that. Otherwise, follow the rest of this step.
@@ -69,7 +61,7 @@ about the files it's currently serving by getting its index page.
 
 ## Creating torrent files
 
-    btmakemetafile.py http://my.tracker:6969/announce myfile.ext
+btmakemetafile.py http://my.tracker:6969/announce myfile.ext
 
 This will generate a file called `myfile.ext.torrent`
 
@@ -84,24 +76,27 @@ my.tracker.
 You can use either a dns name or an IP address in the tracker url.
 
 ### Creating many torrent files
-
-    btcompletedir.py http://my.tracker:6969/announce mydir
+```bash
+btcompletedir.py http://my.tracker:6969/announce mydir
+```
 
 This will generate a torrent file for each file in `mydir`.
 
 ## Editing torrent files
 
 To view metadata encoded in the torrent file:
-
-    btshowmetainfo.py myfile.torrent
+```bash
+btshowmetainfo.py myfile.torrent
+```
 
 To set the announce tracker of a torrent file:
-
-    btreannounce.py http://mytracker.com:6969/announce myfile.torrent
+```bash
+btreannounce.py http://mytracker.com:6969/announce myfile.torrent
+```
 
 To copy the announce information from one file to another:
 
-    btcopyannounce.py source.torrent destination.torrent
+btcopyannounce.py source.torrent destination.torrent
 
 To set the default download name:
 
@@ -113,5 +108,5 @@ To set HTTP seeds:
 
 To remove HTTP seeds:
 
-    btsethttpseeds 0 myfile.torrent
+btsethttpseeds 0 myfile.torrent
 

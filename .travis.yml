@@ -13,11 +13,11 @@ cache:
   directories:
     - $HOME/.cache/pip
 python:
-    - 3.4
-    - 3.5
+    - 3.10
+    - 3.11
 matrix:
   include:
-    - python: 3.5
+    - python: 3.10
       env:
         - STYLE=1
 before_install:

@@ -7,7 +7,7 @@ setup(
     author="Santiago Ramirez",
     author_email="santiirepair@gmail.com",
     url="https://github.com/SantiiRepair/bitgocho",
-    description="A pure python implementation of BitTorrent client",
+    description="🍄 A pure Python implementation of the BitTorrent client.",
     license="BSL",
     packages=find_packages(),
 )
