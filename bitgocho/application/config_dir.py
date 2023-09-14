@@ -8,7 +8,7 @@ import time
 from binascii import hexlify, unhexlify
 from .inifile import ini_write, ini_read
 from bitgocho.meta.bencode import bencode, bdecode
-from .parseargs import defaultargs
+from .parseargs import default_args
 
 DIRNAME = "." + bitgocho.product_name
 
@@ -55,7 +55,7 @@ class ConfigDir(object):
     ###### CONFIG HANDLING ######
     def setDefaults(self, defaults, ignore=()):
         """Set config to default arguments, with option to ignore arguments"""
-        self.config = defaultargs(defaults)
+        self.config = default_args(defaults)
         for key in ignore:
             self.config.pop(key, None)
 

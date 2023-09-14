@@ -14,8 +14,8 @@ from .filter import Filter
 from .http_handler import HTTPHandler, months
 from .t2t import T2TList
 from .torrent_list_parse import HashSet, parsetorrentlist
-from bitgocho.application.number_formats import formatSize
-from bitgocho.application.parseargs import parseargs, formatDefinitions
+from bitgocho.application.number_formats import format_size
+from bitgocho.application.parseargs import parse_args, format_definitions
 from bitgocho.application.parsedir import parsedir
 from bitgocho.client.announce import HTTPAnnouncer, Response
 from bitgocho.meta.bencode import bencode, Bencached, BencodedFile
@@ -1453,10 +1453,10 @@ class tracker(object):
 
 def track(args):
     if len(args) == 0:
-        print(formatDefinitions(defaults, 80))
+        print(format_definitions(defaults, 80))
         return
     try:
-        config, _ = parseargs(args, defaults, 0, 0)
+        config, _ = parse_args(args, defaults, 0, 0)
     except ValueError as e:
         print("error: ", str(e))
         print("run with no arguments for parameter explanations")

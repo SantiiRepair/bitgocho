@@ -6,9 +6,9 @@ from traceback import print_exc
 from .download_bt1 import BT1Download
 from bitgocho.network.raw_server import RawServer
 from bitgocho.network.socket_handler import UPnP_ERROR
-from .RateLimiter import rate_limiter
+from .rate_limiter import rate_limiter
 from bitgocho.network.server_port_handler import MultiHandler
-from bitgocho.application.number_formats import formatIntClock
+from bitgocho.application.number_formats import format_int_clock
 from bitgocho.application.parsedir import parsedir
 from bitgocho.network.nat_punch import UPnP_test
 from bitgocho.clock import clock

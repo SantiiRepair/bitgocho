@@ -1,7 +1,7 @@
 """Number formatting utilities"""
 
 
-def formatInterval(secs, fmt):
+def format_interval(secs, fmt):
     """Format an interval of length secs seconds according to format string
     fmt.
 
@@ -18,7 +18,7 @@ def formatInterval(secs, fmt):
     return fmt.format(h=hours, m=mins, s=secs)
 
 
-def formatIntText(secs):
+def format_int_text(secs):
     """Format an interval of length secs seconds with a textual representation
 
     e.g. formatIntText(9861) = '2 hours 44 min 21 sec'"""
@@ -30,15 +30,15 @@ def formatIntText(secs):
         fmt = "{h:d} hour {m:02d} min {s:02d} sec"
     else:
         fmt = "{m:d} min {s:02d} sec"
-    return formatInterval(secs, fmt)
+    return format_interval(secs, fmt)
 
 
-def formatIntClock(secs):
+def format_int_clock(secs):
     """Format an interval of length secs seconds in h:mm:ss notation"""
-    return formatInterval(secs, "{h:d}:{m:02d}:{s:02d}")
+    return format_interval(secs, "{h:d}:{m:02d}:{s:02d}")
 
 
-def formatSize(size, std="IEC"):
+def format_size(size, std="IEC"):
     """Format number of bytes according to IEC or SI prefixes.
 
     IEC prefixes:

@@ -25,7 +25,7 @@ from .piece_picker import PiecePicker
 from .statistics import Statistics
 from bitgocho.application.config_dir import ConfigDir
 from bitgocho.meta.bencode import bdecode
-from bitgocho.application.parseargs import parseargs, formatDefinitions
+from bitgocho.application.parseargs import parse_args, format_definitions
 from bitgocho.network.btcrypto import CRYPTO_OK
 
 defaults = [
@@ -257,7 +257,7 @@ argslistheader = "Arguments are:\n\n"
 def parse_params(params, presets={}):
     if len(params) == 0:
         return None
-    config, args = parseargs(params, defaults, 0, 1, presets=presets)
+    config, args = parse_args(params, defaults, 0, 1, presets=presets)
     if args:
         if config["metafile"] or config["url"]:
             raise ValueError(
@@ -277,7 +277,7 @@ def parse_params(params, presets={}):
 
 
 def get_usage(defaults=defaults, cols=100, presets={}):
-    return argslistheader + formatDefinitions(defaults, cols, presets)
+    return argslistheader + format_definitions(defaults, cols, presets)
 
 
 def get_metainfo(fname, url, errorfunc):

@@ -1,9 +1,8 @@
-# pylint: disable=W0102,C0103
 import os
 import threading
 from traceback import print_exc
-from bitgocho.meta.BTTree import BTTree
-from bitgocho.meta.Info import MetaInfo
+from bitgocho.meta.bttree import BTTree
+from bitgocho.meta.info import MetaInfo
 
 defaults = [
     ("announce-list", "", "a list of announce URLs - explained below"),
