@@ -40,4 +40,4 @@ class RelativeTime(object):  # pylint: disable=R0903
 if sys.platform != "win32":
     clock = RelativeTime().get_time  # pylint: disable=C0103
 else:
-    from time import clock
+    pass

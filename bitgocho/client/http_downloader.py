@@ -94,9 +94,7 @@ class SingleDownload:
             self.active = True
 
     def _request(self):
-        import encodings.ascii
-        import encodings.punycode
-        import encodings.idna
+        pass
 
         self.error = None
         self.received_data = None

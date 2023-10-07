@@ -216,7 +216,7 @@ class SocketHandler(object):
                     listen_port, bind, ipv6_socket_style=ipv6_socket_style, upnp=upnp
                 )
                 return listen_port
-            except OSError as e:
+            except OSError:
                 pass
         raise OSError(str(e))
 
@@ -251,7 +251,7 @@ class SocketHandler(object):
             addrinfos = socket.getaddrinfo(
                 dns[0], int(dns[1]), socktype, socket.SOCK_STREAM
             )
-        except OSError as e:
+        except OSError:
             raise
         except Exception as e:
             raise OSError(str(e))
